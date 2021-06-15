@@ -1,0 +1,1 @@
+mpiexec -np 2 light_curve_analysis --model Bu2019lm --svd-path ./svdmodels --outdir ./outdir --label AT2017gfo_Bu2019lm --trigger-time 57982.5285236896 --data ./AT2017gfo_KNdominate.dat --prior AT2017gfo.prior --tmin 0 --tmax 30 --dt 0.1 --error-budget 1 --nlive 8 --Ebv-max 0.000001
