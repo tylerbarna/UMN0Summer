@@ -1,0 +1,15 @@
+Error: could not find environment: nmma
+prepending /panfs/roc/groups/7/cough052/barna314/anaconda3/envs/nmma/bin to PATH
+/var/spool/slurmd/job4404525/slurm_script: line 21: srun: command not found
+Traceback (most recent call last):
+  File "bestfit_lightcurves_generation.py", line 1, in <module>
+    import numpy as np
+  File "/soft/anaconda/1.7.0/lib/python2.7/site-packages/numpy/__init__.py", line 133, in <module>
+    from version import git_revision as __git_revision__
+ModuleNotFoundError: No module named 'version'
+Traceback (most recent call last):
+  File "plot.py", line 1, in <module>
+    import numpy as np
+  File "/soft/anaconda/1.7.0/lib/python2.7/site-packages/numpy/__init__.py", line 133, in <module>
+    from version import git_revision as __git_revision__
+ModuleNotFoundError: No module named 'version'

@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --job-name=GWEMLISA
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=joh15016@umn.edu
+#SBATCH --time=11:59:59
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=8gb
+#SBATCH -p k40
+#SBATCH --gres=gpu:k40:1
+
+module load python3
+module load cuda/11.2
+source activate gwemlisa
+export LD_LIBRARY_PATH=~/.conda/envs/gwemlisa/lib/python3.8/site-packages/MultiNest/lib:$LD_LIBRARY_PATH
+cd ~/gwemlisa/bilby_example
+
+python run_lightcurve_modeling_for_gbfisher_ztfperiodic.py --outdir 08yr-gwprior --chainsdir /home/cough052/joh15016/gwemlisa/data/08yr_results/ --binary $SLURM_ARRAY_TASK_ID --numobs 25 --mean-dt 120.0 --std-dt 5.0 --periodfind --gwprior

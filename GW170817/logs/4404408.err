@@ -1,0 +1,14 @@
+usage: conda [-h] [-V] command ...
+conda: error: 'init' is not a conda command, see 'conda -h'
+Error: 'activate' is not a conda command.
+Did you mean "source activate /panfs/roc/groups/7/cough052/barna314/anaconda3/envs/nmma" ?
+slurmstepd: error: execve(): run.sh: Permission denied
+srun: error: cn0315: task 0: Exited with exit code 13
+Traceback (most recent call last):
+  File "bestfit_lightcurves_generation.py", line 9, in <module>
+    import nmma.em
+ImportError: No module named nmma.em
+Traceback (most recent call last):
+  File "plot.py", line 4, in <module>
+    import nmma.em
+ImportError: No module named nmma.em

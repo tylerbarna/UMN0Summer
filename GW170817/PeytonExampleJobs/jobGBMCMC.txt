@@ -1,0 +1,20 @@
+#!/bin/bash
+#SBATCH --job-name=GBMCMC
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=joh15016@umn.edu
+#SBATCH --time=47:59:59
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=12
+#SBATCH --mem=60gb
+#SBATCH -p small
+
+module load hdf5
+module load mygsl/2.6
+module load gsl/2.5
+module load libmvec/1.0
+module load libm/1.0
+cd ~/ldasoft/master/bin
+
+BN="binary$(echo $SLURM_ARRAY_TASK_ID | sed -e :a -e 's/^.\{1,2\}$/0&/;ta')"
+srun ./gb_mcmc --inj /home/cough052/joh15016/gwemlisa/data/08yr_results/$BN/${BN}.dat --sources 2 --duration 251658240.00 --no-rj --cheat --sim-noise --noiseseed 638541 --samples 2048 --rundir /home/cough052/joh15016/gwemlisa/data/08yr_results/$BN --threads 12

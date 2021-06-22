@@ -1,0 +1,11 @@
+Error: could not find environment: nmma
+slurmstepd: error: execve(): run.sh: Permission denied
+srun: error: cn0265: task 0: Exited with exit code 13
+Traceback (most recent call last):
+  File "bestfit_lightcurves_generation.py", line 9, in <module>
+    import nmma.em
+ImportError: No module named nmma.em
+Traceback (most recent call last):
+  File "plot.py", line 4, in <module>
+    import nmma.em
+ImportError: No module named nmma.em

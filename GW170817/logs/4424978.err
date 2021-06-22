@@ -1,0 +1,33 @@
+Error: could not find environment: nmma
+Traceback (most recent call last):
+  File "/home/cough052/barna314/anaconda3/envs/nmma/bin/light_curve_analysis", line 5, in <module>
+    from nmma.em.analysis import main
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/nmma/__init__.py", line 12, in <module>
+    from . import em
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/nmma/em/__init__.py", line 1, in <module>
+    from . import model, utils, likelihood
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/nmma/em/model.py", line 6, in <module>
+    import numpy as np
+  File "/soft/anaconda/1.7.0/lib/python2.7/site-packages/numpy/__init__.py", line 133, in <module>
+    from version import git_revision as __git_revision__
+ImportError: cannot import name 'git_revision' from 'version' (/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/version.py)
+Traceback (most recent call last):
+  File "/home/cough052/barna314/anaconda3/envs/nmma/bin/light_curve_analysis", line 5, in <module>
+    from nmma.em.analysis import main
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/nmma/__init__.py", line 12, in <module>
+    from . import em
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/nmma/em/__init__.py", line 1, in <module>
+    from . import model, utils, likelihood
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/nmma/em/model.py", line 6, in <module>
+    import numpy as np
+  File "/soft/anaconda/1.7.0/lib/python2.7/site-packages/numpy/__init__.py", line 133, in <module>
+    from version import git_revision as __git_revision__
+ImportError: cannot import name 'git_revision' from 'version' (/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/version.py)
+Traceback (most recent call last):
+  File "bestfit_lightcurves_generation.py", line 9, in <module>
+    import nmma.em
+ImportError: No module named nmma.em
+Traceback (most recent call last):
+  File "plot.py", line 4, in <module>
+    import nmma.em
+ImportError: No module named nmma.em

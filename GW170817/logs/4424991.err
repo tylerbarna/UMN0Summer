@@ -1,0 +1,15 @@
+Error: could not import yaml (required to read .condarc config file)
+slurmstepd: error: execve(): run.sh: Permission denied
+srun: error: cn0005: task 0: Exited with exit code 13
+Traceback (most recent call last):
+  File "bestfit_lightcurves_generation.py", line 1, in <module>
+    import numpy as np
+  File "/soft/anaconda/1.7.0/lib/python2.7/site-packages/numpy/__init__.py", line 133, in <module>
+    from version import git_revision as __git_revision__
+ImportError: cannot import name 'git_revision' from 'version' (/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/version.py)
+Traceback (most recent call last):
+  File "plot.py", line 1, in <module>
+    import numpy as np
+  File "/soft/anaconda/1.7.0/lib/python2.7/site-packages/numpy/__init__.py", line 133, in <module>
+    from version import git_revision as __git_revision__
+ImportError: cannot import name 'git_revision' from 'version' (/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/version.py)

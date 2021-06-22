@@ -1,0 +1,70 @@
+ERROR: Unable to locate a modulefile for 'latex'
+slurmstepd: error: execve(): run.sh: Permission denied
+srun: error: cn0050: task 0: Exited with exit code 13
+/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator GaussianProcessRegressor from version 0.23.1 when using version 0.24.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+plot.py:63: UserWarning: marker is redundantly defined by the 'marker' keyword argument and the fmt string "o" (-> marker='o'). The keyword argument will take precedence.
+  ax.errorbar(t[idx],y[idx],yerr=sigma_y[idx],marker='o',color='k', fmt='o')
+plot.py:63: UserWarning: marker is redundantly defined by the 'marker' keyword argument and the fmt string "o" (-> marker='o'). The keyword argument will take precedence.
+  ax.errorbar(t[idx],y[idx],yerr=sigma_y[idx],marker='o',color='k', fmt='o')
+Traceback (most recent call last):
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/texmanager.py", line 254, in _run_checked_subprocess
+    stderr=subprocess.STDOUT)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/subprocess.py", line 411, in check_output
+    **kwargs).stdout
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/subprocess.py", line 488, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'latex': 'latex'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "plot.py", line 83, in <module>
+    plt.savefig('best_lightcurves_plot.pdf', bbox_inches='tight')
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/pyplot.py", line 966, in savefig
+    res = fig.savefig(*args, **kwargs)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/figure.py", line 3005, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/backend_bases.py", line 2230, in print_figure
+    self.figure.draw(renderer)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/artist.py", line 74, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/artist.py", line 51, in draw_wrapper
+    return draw(artist, renderer, *args, **kwargs)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/figure.py", line 2781, in draw
+    renderer, self, artists, self.suppressComposite)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/artist.py", line 51, in draw_wrapper
+    return draw(artist, renderer, *args, **kwargs)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/_api/deprecation.py", line 431, in wrapper
+    return func(*inner_args, **inner_kwargs)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/axes/_base.py", line 2921, in draw
+    mimage._draw_list_compositing_images(renderer, self, artists)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/artist.py", line 51, in draw_wrapper
+    return draw(artist, renderer, *args, **kwargs)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/axis.py", line 1138, in draw
+    renderer)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/axis.py", line 1064, in _get_tick_bboxes
+    for tick in ticks if tick.label1.get_visible()],
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/axis.py", line 1064, in <listcomp>
+    for tick in ticks if tick.label1.get_visible()],
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/text.py", line 903, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/text.py", line 308, in _get_layout
+    ismath="TeX" if self.get_usetex() else False)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/backends/_backend_pdf_ps.py", line 89, in get_text_width_height_descent
+    s, fontsize, renderer=self)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/texmanager.py", line 399, in get_text_width_height_descent
+    dvifile = self.make_dvi(tex, fontsize)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/texmanager.py", line 293, in make_dvi
+    texfile], tex, cwd=tmpdir)
+  File "/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/matplotlib/texmanager.py", line 258, in _run_checked_subprocess
+    'found'.format(command[0])) from exc
+RuntimeError: Failed to process string with tex because latex could not be found

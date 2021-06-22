@@ -1,0 +1,8 @@
+slurmstepd: error: execve(): run.sh: Permission denied
+srun: error: cn0136: task 0: Exited with exit code 13
+/home/cough052/barna314/anaconda3/envs/nmma/lib/python3.7/site-packages/sklearn/base.py:315: UserWarning: Trying to unpickle estimator GaussianProcessRegressor from version 0.23.1 when using version 0.24.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+plot.py:63: UserWarning: marker is redundantly defined by the 'marker' keyword argument and the fmt string "o" (-> marker='o'). The keyword argument will take precedence.
+  ax.errorbar(t[idx],y[idx],yerr=sigma_y[idx],marker='o',color='k', fmt='o')
+plot.py:63: UserWarning: marker is redundantly defined by the 'marker' keyword argument and the fmt string "o" (-> marker='o'). The keyword argument will take precedence.
+  ax.errorbar(t[idx],y[idx],yerr=sigma_y[idx],marker='o',color='k', fmt='o')
